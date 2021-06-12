@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Real-Time Message Data</h1>
+  <p>This page contains the live-updating message data for both sensors Curb1 and Curb2</p>
+  <h2>Sensor 1 </h2>
+  <ul>
+    <li><strong>Timestamp:</strong> {{ year1 }}/{{month1}}/{{day1}}  {{hour1}}:{{minute1}}:{{second1}}</li>
+    <li><strong>Column 1:</strong> {{ c11 }}</li>
+    <li><strong>Column 2:</strong> {{ c12 }}</li>
+    <li><strong>Column 3:</strong> {{ c13 }}</li>
+    <li><strong>Column 4:</strong> {{ c14 }}</li>
+	<li><strong>Column 5:</strong> {{ c15 }}</li>
+	<li><strong>Column 6:</strong> {{ c16 }}</li>	
+  </ul>
+  <h2>Sensor 2 </h2>
+  <ul>
+    <li><strong>Timestamp:</strong> {{ year2 }}/{{month2}}/{{day2}}  {{hour2}}:{{minute2}}:{{second2}}</li>
+    <li><strong>Column 1:</strong> {{ c21 }}</li>
+    <li><strong>Column 2:</strong> {{ c22 }}</li>
+    <li><strong>Column 3:</strong> {{ c23 }}</li>
+    <li><strong>Column 4:</strong> {{ c24 }}</li>
+	<li><strong>Column 5:</strong> {{ c25 }}</li>
+	<li><strong>Column 6:</strong> {{ c26 }}</li>	
+  </ul>  
+{% endblock %}

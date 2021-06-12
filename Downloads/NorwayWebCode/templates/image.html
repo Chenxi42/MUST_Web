@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+{% load static%}
+  <h1>Real-Time Image Data</h1>
+  <p>This page contains the live-updating image data for both sensors 008 and 009</p>
+  <h2>Sensor 008</h2>
+  <p> This is the newest image.</p>
+
+  <img src="{% static 'image1.jpg' %}" alt="Sensor Number One"/>
+  <h1>Sensor 009</h1>
+  <p> This is the newest image.</p>
+
+  <img src="{% static 'image2.jpg' %}" alt="Sensor Number Two">
+{% endblock %}
